@@ -1,0 +1,182 @@
+/* Home Page */
+body{
+    background-color: #FFF3F2;
+    margin: 0px;
+    
+}
+#wrapper {
+    width: 60%;
+    min-width: 700px;
+    margin: auto;
+    padding-top: 94px;
+    margin-bottom: 30px;
+}
+header{
+    height: 80px;
+    background-color: #FFE2E0;
+    position: fixed;
+    width: 100%;
+
+}
+#headerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    height: 60px; 
+}
+#footerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    height: 60px; 
+}
+footer{
+    
+    height: 120px;
+    background-color: #FFE2E0;
+    margin-bottom: 0px;
+}
+#bannerimg{
+    width: 100%;
+}
+.categorybutton{
+    width: 100%;
+    border: none;
+    color: #262626;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#pricetag{
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+}
+#productnametag{
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+}
+
+/* Category Page */
+
+#wrapper1{
+    width: 80%;
+    min-width: 700px;
+    margin: auto;
+    padding-top: 94px;
+    margin-bottom: 100px;
+}
+#categorylabel{
+    border-top: 2px solid #F8B8B7;
+    padding-top: 14px;
+    
+}
+.container{
+    display: flex;
+    height: 100%; 
+}
+.fixed-column {
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto; /* Enable scrolling for the fixed column if its content exceeds the height of the viewport */
+}
+.scrolling-column {
+    width: calc(100% - 200px);
+    padding-left: 230px;
+    overflow-y: scroll;
+    height: 100%;
+    overflow: auto; /* Enable scrolling for the right column */
+    display: flex; 
+    flex-wrap: wrap;
+    
+    gap: 8px;
+}
+
+
+#saleflex{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* General styling for the checkbox label */
+.checkbox-label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+    line-height: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Hide the default checkbox */
+.checkbox-label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+/* When the checkbox is checked */
+.checkbox-label input:checked ~ .checkmark {
+    background-color: #f35429;
+    border-color: #f35429;
+}
+
+/* Add a tick icon when the checkbox is checked */
+.checkbox-label input:checked ~ .checkmark:after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Style for the hover state */
+.checkbox-label:hover .checkmark {
+    background-color: #ccc;
+}
+
+.toggle-btn{
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    color:  #f35429;
+    text-align: top;
+}
+
+#icon{
+    width: 40px;
+    height: 40px;
+}
